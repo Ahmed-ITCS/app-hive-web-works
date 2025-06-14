@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Smartphone, Globe, Code, Palette, Shield, Zap, ArrowLeft, CheckCircle } from 'lucide-react';
+import { Smartphone, Globe, Code, Palette, Shield, Zap, ArrowLeft, CheckCircle, FolderOpen, BookOpen, Server } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Header from '@/components/Header';
@@ -201,6 +202,105 @@ const ServiceDetail = () => {
         "Performance Monitoring Setup",
         "Ongoing Optimization & Support"
       ]
+    },
+    "portfolio-making": {
+      icon: FolderOpen,
+      title: "Portfolio Making",
+      description: "Stand out with a stunning digital portfolio that showcases your best work to clients and employers.",
+      longDescription:
+        "We create visually impressive, mobile-friendly digital portfolios tailored to your profession—perfect for artists, designers, photographers, and professionals wishing to present their skills and projects. Let us help you tell your story with engaging visuals, personalized design, and seamless user experience. Our team ensures your portfolio leaves a lasting impression on your audience.",
+      features: [
+        "Custom Portfolio Layouts",
+        "Interactive Project Galleries",
+        "Personal Branding Integration",
+        "Easy Content Management",
+        "SEO-friendly Setup",
+        "Responsive & Mobile Optimized",
+        "Contact & Booking Forms",
+        "Animation & Effects",
+        "Hosting & Domain Assistance",
+        "Analytics Tracking"
+      ],
+      benefits: [
+        "Impress clients and employers with a unique showcase",
+        "Mobile-ready for all devices",
+        "Enhance personal or company brand",
+        "Attract new opportunities and grow your audience"
+      ],
+      process: [
+        "Consultation & Content Planning",
+        "Wireframing & Concept Design",
+        "Custom Development",
+        "Content Upload & Review",
+        "Launch and Feedback",
+        "Ongoing Support & Updates"
+      ]
+    },
+    "brochure-making": {
+      icon: BookOpen,
+      title: "Brochure Making",
+      description: "Professional digital and print brochures designed to captivate and inform your audience.",
+      longDescription:
+        "Our brochure-making services deliver both beautiful print and interactive digital brochures that highlight your products, services, or brand. From creative concept and copywriting to final delivery, we focus on clarity, stunning visuals, and message impact. Get an eye-catching brochure that captures your audience’s attention and communicates your value.",
+      features: [
+        "Print-ready & Digital Brochures",
+        "Custom Graphic Design",
+        "Compelling Copywriting",
+        "Consistent Branding",
+        "Product & Service Highlighting",
+        "Interactive PDF/Web Versions",
+        "Unlimited Revisions (design stage)",
+        "Professional Photography Options",
+        "Multi-page Layouts",
+        "Final Print & Delivery Guidance"
+      ],
+      benefits: [
+        "Engage audiences with memorable visuals",
+        "Boost your marketing and promotional materials",
+        "Ensure brand consistency across channels",
+        "Clear and concise information delivery"
+      ],
+      process: [
+        "Requirements Gathering",
+        "Concept & Visual Drafting",
+        "Content & Copy Collaboration",
+        "Design Creation & Feedback",
+        "Digital/Print Setup",
+        "Delivery & Project Handover"
+      ]
+    },
+    "hosting-service": {
+      icon: Server,
+      title: "Hosting Service",
+      description: "Reliable, scalable hosting with expert setup and proactive support for your applications.",
+      longDescription:
+        "Trust your digital presence with our robust hosting services. We handle everything—from initial setup and migration to ongoing security, backups, and 24/7 support. Our solutions scale with you, offering high uptime, performance monitoring, and easy management for websites, portfolios, applications, or e-commerce stores.",
+      features: [
+        "Managed Cloud Hosting",
+        "High Uptime Guarantees",
+        "Domain Setup & Email Hosting",
+        "DDOS Protection & SSL Security",
+        "Automated Backups",
+        "Performance Monitoring",
+        "One-click App Installations",
+        "Flexible Scaling Options",
+        "Migration Assistance",
+        "24/7 Support"
+      ],
+      benefits: [
+        "Worry-free infrastructure management",
+        "Top-tier security and reliability",
+        "Technical support, any time you need",
+        "Scalable hosting as your business grows"
+      ],
+      process: [
+        "Consultation & Needs Assessment",
+        "Hosting Plan Selection",
+        "Setup & Domain Configuration",
+        "Migration or Deployment",
+        "Security Optimization",
+        "Ongoing Management & Support"
+      ]
     }
   };
 
@@ -343,3 +443,6 @@ const ServiceDetail = () => {
 };
 
 export default ServiceDetail;
+
+// ServiceDetail.tsx is now over 400 lines. You should consider refactoring this file into smaller components soon for easier maintenance.
+

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Smartphone, Globe, Code, Palette, Shield, Zap } from 'lucide-react';
+import { Smartphone, Globe, Code, Palette, Shield, Zap, FolderOpen, BookOpen, Server } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 
@@ -47,6 +47,27 @@ const Services = () => {
       description: "Optimize your applications for speed, scalability, and efficiency across all platforms.",
       features: ["Speed Optimization", "Scalability Planning", "Monitoring Setup", "Performance Analytics"],
       slug: "performance-optimization"
+    },
+    {
+      icon: FolderOpen,
+      title: "Portfolio Making",
+      description: "Stand out with a stunning digital portfolio that showcases your best work to clients and employers.",
+      features: ["Custom Layouts", "Interactive Galleries", "Personal Branding", "Mobile Responsive"],
+      slug: "portfolio-making"
+    },
+    {
+      icon: BookOpen,
+      title: "Brochure Making",
+      description: "Professional digital and print brochures designed to captivate and inform your audience.",
+      features: ["Print & Digital Design", "Brand Consistency", "Compelling Copywriting", "Creative Layouts"],
+      slug: "brochure-making"
+    },
+    {
+      icon: Server,
+      title: "Hosting Service",
+      description: "Reliable, scalable hosting with expert setup and proactive support for your applications.",
+      features: ["Cloud Hosting", "Managed Services", "24/7 Support", "High Uptime SLA"],
+      slug: "hosting-service"
     }
   ];
 
@@ -98,3 +119,4 @@ const Services = () => {
 };
 
 export default Services;
+
