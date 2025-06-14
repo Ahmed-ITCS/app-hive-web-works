@@ -37,14 +37,14 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 bg-gray-50">
+    <section id="about" className="py-20 px-4 bg-secondary">
       <div className="container mx-auto max-w-6xl">
         {/* Why Choose Us Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Why Choose Syncsoft?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             We're not just developers – we're your strategic partners in digital transformation. 
             With a proven track record of delivering exceptional solutions, we combine technical expertise 
             with creative vision to build applications that drive real business results.
@@ -81,15 +81,15 @@ const About = () => {
           </div>
           
           <div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">
+            <h3 className="text-3xl font-bold text-foreground mb-6">
               State-of-the-Art Development Environment
             </h3>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Our modern office spaces are equipped with cutting-edge technology and designed to foster 
               creativity and collaboration. We believe that the right environment drives innovation and 
               exceptional results for our clients.
             </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               From high-performance development workstations to collaborative spaces, every aspect of 
               our workspace is optimized for delivering world-class software solutions.
             </p>
@@ -99,14 +99,14 @@ const About = () => {
         {/* Benefits Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
-                <benefit.icon className="text-white" size={24} />
+            <div key={index} className="bg-card p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/70 rounded-lg flex items-center justify-center mb-4">
+                <benefit.icon className="text-primary-foreground" size={24} />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              <h3 className="text-lg font-semibold text-card-foreground mb-2">
                 {benefit.title}
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-muted-foreground text-sm">
                 {benefit.description}
               </p>
             </div>

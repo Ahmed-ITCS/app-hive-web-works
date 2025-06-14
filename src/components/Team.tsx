@@ -74,13 +74,13 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20 px-4 bg-white">
+    <section id="team" className="py-20 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Meet Our Team
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Our talented team of developers, designers, and strategists work together 
             to bring your digital vision to life with expertise and passion.
           </p>
@@ -89,7 +89,7 @@ const Team = () => {
         {/* Team Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <Card key={index} className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2">
+            <Card key={index} className="group hover:shadow-2xl transition-all duration-300 border border-border shadow-lg hover:-translate-y-2 bg-card">
               <CardContent className="p-6 text-center">
                 <div className="relative mb-6">
                   <img
@@ -97,37 +97,37 @@ const Team = () => {
                     alt={member.name}
                     className="w-24 h-24 rounded-full mx-auto object-cover shadow-lg group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 w-24 h-24 rounded-full mx-auto bg-gradient-to-br from-blue-500/20 to-purple-600/20 group-hover:opacity-0 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 w-24 h-24 rounded-full mx-auto bg-gradient-to-br from-primary/20 to-primary/10 group-hover:opacity-0 transition-opacity duration-300"></div>
                 </div>
                 
-                <h3 className="text-xl font-semibold text-gray-900 mb-1">
+                <h3 className="text-xl font-semibold text-card-foreground mb-1">
                   {member.name}
                 </h3>
                 
-                <p className="text-blue-600 font-medium mb-3">
+                <p className="text-primary font-medium mb-3">
                   {member.role}
                 </p>
                 
-                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                   {member.bio}
                 </p>
                 
                 <div className="flex justify-center space-x-3">
                   <a 
                     href={member.social.linkedin} 
-                    className="text-gray-400 hover:text-blue-600 transition-colors p-2 hover:bg-blue-50 rounded-full"
+                    className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-primary/10 rounded-full"
                   >
                     <Linkedin size={18} />
                   </a>
                   <a 
                     href={member.social.github} 
-                    className="text-gray-400 hover:text-gray-900 transition-colors p-2 hover:bg-gray-50 rounded-full"
+                    className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-primary/10 rounded-full"
                   >
                     <Github size={18} />
                   </a>
                   <a 
                     href={member.social.twitter} 
-                    className="text-gray-400 hover:text-blue-400 transition-colors p-2 hover:bg-blue-50 rounded-full"
+                    className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-primary/10 rounded-full"
                   >
                     <Twitter size={18} />
                   </a>
