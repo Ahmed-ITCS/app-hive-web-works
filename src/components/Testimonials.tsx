@@ -8,14 +8,14 @@ const Testimonials = () => {
     {
       name: "Sarah Johnson",
       role: "CEO, StartupFlow",
-      content: "TechFlow transformed our vision into a beautiful, functional mobile app that our users love. Their attention to detail and technical expertise is unmatched.",
+      content: "Syncsoft transformed our vision into a beautiful, functional mobile app that our users love. Their attention to detail and technical expertise is unmatched.",
       rating: 5,
       avatar: "SJ"
     },
     {
       name: "Michael Chen",
       role: "CTO, DataSync",
-      content: "Working with TechFlow was a game-changer for our business. They delivered a robust web application that scaled perfectly with our growth.",
+      content: "Working with Syncsoft was a game-changer for our business. They delivered a robust web application that scaled perfectly with our growth.",
       rating: 5,
       avatar: "MC"
     },
