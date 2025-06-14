@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Smartphone, Globe, Code, Palette, Shield, Zap, ArrowLeft, CheckCircle } from 'lucide-react';
@@ -209,11 +208,11 @@ const ServiceDetail = () => {
 
   if (!service) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Service Not Found</h1>
+          <h1 className="text-2xl font-bold text-foreground mb-4">Service Not Found</h1>
           <Link to="/">
-            <Button>Return Home</Button>
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Return Home</Button>
           </Link>
         </div>
       </div>
@@ -221,26 +220,26 @@ const ServiceDetail = () => {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 bg-gradient-to-br from-blue-50 to-purple-50">
+      <section className="pt-24 pb-16 px-4 bg-gradient-to-br from-background via-card to-secondary">
         <div className="container mx-auto max-w-6xl">
-          <Link to="/" className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-8">
+          <Link to="/" className="inline-flex items-center text-primary hover:text-primary/80 mb-8 transition-colors">
             <ArrowLeft size={20} className="mr-2" />
             Back to Home
           </Link>
           
           <div className="flex items-center mb-6">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mr-6">
-              <service.icon className="text-white" size={32} />
+            <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/70 rounded-lg flex items-center justify-center mr-6">
+              <service.icon className="text-primary-foreground" size={32} />
             </div>
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
                 {service.title}
               </h1>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-muted-foreground">
                 {service.description}
               </p>
             </div>
@@ -249,29 +248,29 @@ const ServiceDetail = () => {
       </section>
 
       {/* Overview Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Overview</h2>
-              <p className="text-lg text-gray-600 mb-8">
+              <h2 className="text-3xl font-bold text-foreground mb-6">Overview</h2>
+              <p className="text-lg text-muted-foreground mb-8">
                 {service.longDescription}
               </p>
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 Get Started Today
               </Button>
             </div>
             <div>
-              <Card>
+              <Card className="border border-border shadow-lg bg-card">
                 <CardHeader>
-                  <CardTitle>Key Benefits</CardTitle>
+                  <CardTitle className="text-card-foreground">Key Benefits</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
                     {service.benefits.map((benefit, index) => (
                       <li key={index} className="flex items-start">
-                        <CheckCircle className="text-green-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-                        <span className="text-gray-700">{benefit}</span>
+                        <CheckCircle className="text-primary mr-3 mt-0.5 flex-shrink-0" size={20} />
+                        <span className="text-muted-foreground">{benefit}</span>
                       </li>
                     ))}
                   </ul>
@@ -283,15 +282,15 @@ const ServiceDetail = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-secondary">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">What's Included</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">What's Included</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {service.features.map((feature, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm border">
+              <div key={index} className="bg-card p-6 rounded-lg shadow-lg border border-border hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <CheckCircle className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span className="text-gray-700 font-medium">{feature}</span>
+                  <CheckCircle className="text-primary mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span className="text-card-foreground font-medium">{feature}</span>
                 </div>
               </div>
             ))}
@@ -300,17 +299,17 @@ const ServiceDetail = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Our Process</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Our Process</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {service.process.map((step, index) => (
-              <Card key={index} className="text-center">
+              <Card key={index} className="text-center border border-border shadow-lg bg-card hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
+                  <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
                     {index + 1}
                   </div>
-                  <CardTitle className="text-lg">{step}</CardTitle>
+                  <CardTitle className="text-lg text-card-foreground">{step}</CardTitle>
                 </CardHeader>
               </Card>
             ))}
@@ -319,7 +318,7 @@ const ServiceDetail = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <section className="py-16 px-4 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Get Started?
@@ -328,10 +327,10 @@ const ServiceDetail = () => {
             Let's discuss how our {service.title.toLowerCase()} services can help transform your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary">
+            <Button size="lg" variant="secondary" className="bg-card text-card-foreground hover:bg-card/90">
               Schedule a Consultation
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
               View Our Portfolio
             </Button>
           </div>
