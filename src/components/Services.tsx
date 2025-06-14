@@ -1,0 +1,91 @@
+
+import React from 'react';
+import { Smartphone, Globe, Code, Palette, Shield, Zap } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+
+const Services = () => {
+  const services = [
+    {
+      icon: Smartphone,
+      title: "Mobile App Development",
+      description: "Native iOS and Android apps, React Native, and Flutter solutions that deliver exceptional user experiences.",
+      features: ["iOS & Android", "Cross-platform", "App Store Publishing", "Maintenance & Updates"]
+    },
+    {
+      icon: Globe,
+      title: "Web Application Development",
+      description: "Modern, responsive web applications built with cutting-edge technologies and best practices.",
+      features: ["React & Next.js", "Node.js Backend", "Cloud Deployment", "SEO Optimization"]
+    },
+    {
+      icon: Code,
+      title: "Custom Software Solutions",
+      description: "Tailored software solutions designed to meet your specific business requirements and goals.",
+      features: ["API Development", "Database Design", "Third-party Integrations", "Legacy Modernization"]
+    },
+    {
+      icon: Palette,
+      title: "UI/UX Design",
+      description: "Beautiful, intuitive designs that enhance user engagement and drive conversions.",
+      features: ["User Research", "Wireframing", "Prototyping", "Design Systems"]
+    },
+    {
+      icon: Shield,
+      title: "Security & Testing",
+      description: "Comprehensive security audits and testing to ensure your applications are robust and secure.",
+      features: ["Security Audits", "Automated Testing", "Performance Testing", "Code Reviews"]
+    },
+    {
+      icon: Zap,
+      title: "Performance Optimization",
+      description: "Optimize your applications for speed, scalability, and efficiency across all platforms.",
+      features: ["Speed Optimization", "Scalability Planning", "Monitoring Setup", "Performance Analytics"]
+    }
+  ];
+
+  return (
+    <section id="services" className="py-20 px-4 bg-white">
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Our Services
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            From concept to deployment, we provide comprehensive development services 
+            to bring your digital vision to life.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <Card key={index} className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2">
+              <CardHeader>
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <service.icon className="text-white" size={24} />
+                </div>
+                <CardTitle className="text-xl font-semibold text-gray-900">
+                  {service.title}
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  {service.description}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  {service.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center text-sm text-gray-600">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Services;
