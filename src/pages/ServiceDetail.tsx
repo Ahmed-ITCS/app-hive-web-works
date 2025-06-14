@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Smartphone, Globe, Code, Palette, Shield, Zap, ArrowLeft, CheckCircle, FolderOpen, BookOpen, Server } from 'lucide-react';
+import { Smartphone, Globe, Code, Palette, Shield, Zap, ArrowLeft, CheckCircle, FolderOpen, BookOpen, Server, Layout, Briefcase, Wrench, Cable } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Header from '@/components/Header';
@@ -203,9 +202,9 @@ const ServiceDetail = () => {
         "Ongoing Optimization & Support"
       ]
     },
-    "portfolio-making": {
+    "portfolio-designing": {
       icon: FolderOpen,
-      title: "Portfolio Making",
+      title: "Portfolio Designing",
       description: "Stand out with a stunning digital portfolio that showcases your best work to clients and employers.",
       longDescription:
         "We create visually impressive, mobile-friendly digital portfolios tailored to your profession—perfect for artists, designers, photographers, and professionals wishing to present their skills and projects. Let us help you tell your story with engaging visuals, personalized design, and seamless user experience. Our team ensures your portfolio leaves a lasting impression on your audience.",
@@ -236,12 +235,12 @@ const ServiceDetail = () => {
         "Ongoing Support & Updates"
       ]
     },
-    "brochure-making": {
+    "brochure-designing": {
       icon: BookOpen,
-      title: "Brochure Making",
+      title: "Brochure Designing",
       description: "Professional digital and print brochures designed to captivate and inform your audience.",
       longDescription:
-        "Our brochure-making services deliver both beautiful print and interactive digital brochures that highlight your products, services, or brand. From creative concept and copywriting to final delivery, we focus on clarity, stunning visuals, and message impact. Get an eye-catching brochure that captures your audience’s attention and communicates your value.",
+        "Our brochure-designing services deliver both beautiful print and interactive digital brochures that highlight your products, services, or brand. From creative concept and copywriting to final delivery, we focus on clarity, stunning visuals, and message impact. Get an eye-catching brochure that captures your audience’s attention and communicates your value.",
       features: [
         "Print-ready & Digital Brochures",
         "Custom Graphic Design",
@@ -300,6 +299,138 @@ const ServiceDetail = () => {
         "Migration or Deployment",
         "Security Optimization",
         "Ongoing Management & Support"
+      ]
+    },
+    "marketing-brochure-designing": {
+      icon: Layout,
+      title: "Marketing Brochure Designing",
+      description: "Creative marketing brochures that effectively communicate your brand message and drive engagement.",
+      longDescription:
+        "Elevate your marketing campaigns with brochures designed to attract, inform, and convert. Our marketing brochure designing service combines decades of design experience with focused brand messaging, resulting in brochures that reflect your brand’s values and help you stand out in any industry. We handle everything—from concept, layout, high-impact visuals, and copywriting, to final print- or web-ready files. Our team ensures that your materials are as persuasive and visually appealing as your brand deserves.",
+      features: [
+        "Custom Graphics & Illustrations",
+        "Targeted Messaging & Storytelling",
+        "Print & Digital Formats",
+        "Brand Consistency",
+        "Audience-Focused Designs",
+        "Professional Copywriting",
+        "High-Quality Print Prep",
+        "Interactive Elements (for digital)",
+        "Fast Turnaround",
+        "End-to-End Project Management"
+      ],
+      benefits: [
+        "Drive leads and sales with impactful visuals",
+        "Enhance brand recognition in your marketing efforts",
+        "Communicate complex information clearly",
+        "Make a memorable first impression in campaigns"
+      ],
+      process: [
+        "Discovery & Marketing Goals Discussion",
+        "Messaging Strategy & Drafts",
+        "Concept Design & Visual Themes",
+        "Content & Copy Approval",
+        "Final Artwork & Print/Web Prep",
+        "Delivery & Ongoing Support"
+      ]
+    },
+    "company-profiles-designing": {
+      icon: Briefcase,
+      title: "Company Profiles Designing",
+      description: "Detailed company profiles crafted to build trust and showcase your business strengths.",
+      longDescription:
+        "A well-designed company profile is more than a document—it's your business identity. We design professional, elegant company profiles that highlight your strengths, achievements, and value proposition. Our process includes thorough content strategy, branding alignment, and modern design layouts tailored to your industry. We deliver both digital and print-ready versions, making it easy for you to present your company to clients, investors, or during presentations.",
+      features: [
+        "Professional Layouts",
+        "Brand Identity Integration",
+        "Content Strategy & Editing",
+        "Editable Templates (Word/PDF)",
+        "HD Graphics & Company Photos",
+        "Infographic Elements",
+        "Business Milestone Highlights",
+        "Executive & Team Bios",
+        "Service & Product Showcase",
+        "Strategic Messaging"
+      ],
+      benefits: [
+        "Build instant credibility with partners and investors",
+        "Strengthen your brand presence",
+        "Communicate your business mission and achievements",
+        "Easily share across multiple channels"
+      ],
+      process: [
+        "Initial Consultation & Brand Review",
+        "Information Architecture Planning",
+        "Draft Content & Design Mockups",
+        "Client Feedback & Refinement",
+        "Finalization & Delivery in Editable Formats",
+        "Support for Updates as Needed"
+      ]
+    },
+    "network-troubleshooting": {
+      icon: Wrench,
+      title: "Network Troubleshooting",
+      description: "Comprehensive network diagnosis and troubleshooting to keep your systems healthy and connected.",
+      longDescription:
+        "Don't let network hiccups slow your business. Our network troubleshooting service identifies, isolates, and resolves connectivity problems in wired and wireless networks. We use specialized diagnostic tools and hands-on testing to quickly restore performance. From on-site to remote troubleshooting, trust us to get your infrastructure back on track and running reliably.",
+      features: [
+        "Connectivity Analysis",
+        "Hardware & Cable Checks",
+        "Wi-Fi Strength Assessment",
+        "Router/Firewall Diagnostics",
+        "LAN/WAN Performance Testing",
+        "Issue Isolation & Resolution",
+        "Network Security Checks",
+        "On-site & Remote Support",
+        "Documentation of Issues & Fixes",
+        "Preventive Recommendations"
+      ],
+      benefits: [
+        "Minimize downtime and disruptions",
+        "Quickly identify network faults",
+        "Ensure optimal network performance",
+        "Protect against recurring issues"
+      ],
+      process: [
+        "Problem Reporting & Initial Assessment",
+        "On-site/Remote Diagnosis",
+        "Testing & Analysis of Network Components",
+        "Fault Isolation & Repair",
+        "Performance Verification",
+        "Final Report & Recommendations"
+      ]
+    },
+    "it-equipment-installation": {
+      icon: Cable,
+      title: "IT Equipment Installation & Configuration",
+      description: "Expert installation and setup of IT equipment ensuring smooth operations from day one.",
+      longDescription:
+        "Setting up new IT equipment can be a headache—let the pros handle it! We offer installation and configuration of computers, servers, printers, network devices, and more. Our team ensures proper cable management, software setup, user access, peripheral integration, and that everything works seamlessly together, so your business is productive from the start.",
+      features: [
+        "Workstation Setup (PCs, Laptops)",
+        "Server & NAS Installation",
+        "Network Device Configuration (Routers, Switches, Firewalls)",
+        "Printer & Peripheral Integration",
+        "Operating System Installation",
+        "User Account Configuration",
+        "Initial Security Hardening",
+        "Cable Management & Labeling",
+        "Testing & Verification",
+        "Documentation Handover"
+      ],
+      benefits: [
+        "Start using new equipment immediately",
+        "Reduce setup errors and downtime",
+        "Get optimized, secure configurations",
+        "Rely on professional expertise and support"
+      ],
+      process: [
+        "Equipment & Site Review",
+        "Installation Plan & Scheduling",
+        "On-site Hardware Setup",
+        "Configuration & Software Install",
+        "Connectivity & Functionality Testing",
+        "Final Sign-off & Support Guidance"
       ]
     }
   };
@@ -445,4 +576,3 @@ const ServiceDetail = () => {
 export default ServiceDetail;
 
 // ServiceDetail.tsx is now over 400 lines. You should consider refactoring this file into smaller components soon for easier maintenance.
-

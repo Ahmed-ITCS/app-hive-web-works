@@ -1,6 +1,9 @@
 
 import React from 'react';
-import { Smartphone, Globe, Code, Palette, Shield, Zap, FolderOpen, BookOpen, Server } from 'lucide-react';
+import {
+  Smartphone, Globe, Code, Palette, Shield, Zap, FolderOpen, BookOpen, Server,
+  Layout, Briefcase, Wrench, Cable
+} from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 
@@ -50,17 +53,17 @@ const Services = () => {
     },
     {
       icon: FolderOpen,
-      title: "Portfolio Making",
+      title: "Portfolio Designing",
       description: "Stand out with a stunning digital portfolio that showcases your best work to clients and employers.",
       features: ["Custom Layouts", "Interactive Galleries", "Personal Branding", "Mobile Responsive"],
-      slug: "portfolio-making"
+      slug: "portfolio-designing"
     },
     {
       icon: BookOpen,
-      title: "Brochure Making",
+      title: "Brochure Designing",
       description: "Professional digital and print brochures designed to captivate and inform your audience.",
       features: ["Print & Digital Design", "Brand Consistency", "Compelling Copywriting", "Creative Layouts"],
-      slug: "brochure-making"
+      slug: "brochure-designing"
     },
     {
       icon: Server,
@@ -68,6 +71,34 @@ const Services = () => {
       description: "Reliable, scalable hosting with expert setup and proactive support for your applications.",
       features: ["Cloud Hosting", "Managed Services", "24/7 Support", "High Uptime SLA"],
       slug: "hosting-service"
+    },
+    {
+      icon: Layout,
+      title: "Marketing Brochure Designing",
+      description: "Creative marketing brochures that effectively communicate your brand message and drive engagement.",
+      features: ["Custom Graphics", "Targeted Messaging", "Print & Digital Delivery", "Brand Consistency"],
+      slug: "marketing-brochure-designing"
+    },
+    {
+      icon: Briefcase,
+      title: "Company Profiles Designing",
+      description: "Detailed company profiles crafted to build trust and showcase your business strengths.",
+      features: ["Professional Layouts", "Brand Alignment", "Content Strategy", "Editable Formats"],
+      slug: "company-profiles-designing"
+    },
+    {
+      icon: Wrench,
+      title: "Network Troubleshooting",
+      description: "Comprehensive network diagnosis and troubleshooting to keep your systems healthy and connected.",
+      features: ["Connectivity Checks", "Hardware Testing", "Issue Isolation", "Performance Optimization"],
+      slug: "network-troubleshooting"
+    },
+    {
+      icon: Cable,
+      title: "IT Equipment Installation & Configuration",
+      description: "Expert installation and setup of IT equipment ensuring smooth operations from day one.",
+      features: ["Workstation Setup", "Network Devices", "Peripheral Integration", "Configuration & Testing"],
+      slug: "it-equipment-installation"
     }
   ];
 
