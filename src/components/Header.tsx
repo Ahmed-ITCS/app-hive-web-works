@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-gray-900">
-            TechFlow
+            Syncsoft
           </div>
           
           {/* Desktop Navigation */}
@@ -21,6 +21,9 @@ const Header = () => {
             </a>
             <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">
               About
+            </a>
+            <a href="#team" className="text-gray-600 hover:text-gray-900 transition-colors">
+              Team
             </a>
             <a href="#testimonials" className="text-gray-600 hover:text-gray-900 transition-colors">
               Testimonials
@@ -51,6 +54,9 @@ const Header = () => {
               </a>
               <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">
                 About
+              </a>
+              <a href="#team" className="text-gray-600 hover:text-gray-900 transition-colors">
+                Team
               </a>
               <a href="#testimonials" className="text-gray-600 hover:text-gray-900 transition-colors">
                 Testimonials

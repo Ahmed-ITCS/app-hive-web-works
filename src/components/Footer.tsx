@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold mb-4">TechFlow</div>
+            <div className="text-2xl font-bold mb-4">Syncsoft</div>
             <p className="text-gray-400 mb-6 max-w-md">
               Building exceptional digital experiences through innovative mobile and web applications. 
               Your vision, our expertise.
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 TechFlow. All rights reserved.</p>
+          <p>&copy; 2024 Syncsoft. All rights reserved.</p>
         </div>
       </div>
     </footer>
