@@ -51,13 +51,13 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-4 bg-white">
+    <section id="services" className="py-20 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             From concept to deployment, we provide comprehensive development services 
             to bring your digital vision to life.
           </p>
@@ -66,23 +66,23 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Link key={index} to={`/services/${service.slug}`}>
-              <Card className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2 cursor-pointer h-full">
+              <Card className="group hover:shadow-2xl transition-all duration-300 border border-border shadow-lg hover:-translate-y-2 cursor-pointer h-full bg-card hover:bg-accent/50">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="text-white" size={24} />
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/70 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="text-primary-foreground" size={24} />
                   </div>
-                  <CardTitle className="text-xl font-semibold text-gray-900">
+                  <CardTitle className="text-xl font-semibold text-card-foreground">
                     {service.title}
                   </CardTitle>
-                  <CardDescription className="text-gray-600">
+                  <CardDescription className="text-muted-foreground">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-gray-600">
-                        <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                      <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
                         {feature}
                       </li>
                     ))}
