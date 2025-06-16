@@ -18,7 +18,7 @@ const Contact = () => {
     console.log('Form submitted:', formData);
     // Handle form submission here
     try {
-      const response = await fetch('portfolio-backend-brown-two.vercel.app/api/contact.js', { // Replace with your actual API endpoint
+      const response = await fetch('https://portfolio-backend-brown-two.vercel.app/api/contact.js', { // Replace with your actual API endpoint
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
